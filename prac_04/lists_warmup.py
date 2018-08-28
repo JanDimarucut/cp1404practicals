@@ -14,16 +14,16 @@ numbers + [6, 5, 3] = 3,1,4,1,5,9,2,6,5,3
 
 number = [3, 1, 4, 1, 5, 9, 2]
 
-#1
+# 1
 number[0] = 10
 
-#2
+# 2
 number[-1] = 1
 
-#3
+# 3
 print(number[2:])
 
-#4
+# 4
 if 9 in number:
     print(True)
 else:
