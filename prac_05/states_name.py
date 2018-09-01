@@ -1,16 +1,18 @@
-# TODO: Reformat this file so the dictionary code follows PEP 8 convention
+
 STATE_NAMES = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern Territory", "WA": "Western Australia",
                "ACT": "Australian Capital Territory", "VIC": "Victoria", "TAS": "Tasmania"}
 
- state = input("Enter short state: ").upper()
- while state != "":
-    if state in STATE_NAMES:
-        print(state, "is", STATE_NAMES[state])
-    else:
-        print("Invalid short state")
-    state = input("Enter short state: ").upper()
+#state = input("Enter short state: ").upper()
+#while state != "":
+#    if state in STATE_NAMES:
+#        print(state, "is", STATE_NAMES[state])
+#    else:
+#        print("Invalid short state")
+#    state = input("Enter short state: ").upper()
 
 # 4
 
+max_length = max(len(key) for key in STATE_NAMES)
+
 for key in STATE_NAMES:
-    print("{:< is {:>{STATE_NAMELEN}".format(key, STATE_NAMES[key]))
+    print("{:{}} is {}".format(key, max_length, STATE_NAMES[key]))
