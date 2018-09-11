@@ -15,12 +15,12 @@ def main():
     limo = Car("My limo", 100)
     # Added 20 units to current fuel
     limo.add_fuel(20)
-    print("Current fuel=",limo.fuel)
+    print("Current fuel=", limo.fuel)
     print(limo)
     limo.drive(115)
-    print("Odometer=",limo.odometer)
-    #Fuel remaining after driving
-    print("Fuel remaining=",limo.fuel)
+    print("Odometer=", limo.odometer)
+    # Fuel remaining after driving
+    print("Fuel remaining=", limo.fuel)
 
 
 main()
