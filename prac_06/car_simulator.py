@@ -1,6 +1,8 @@
 from prac_06.car import Car
 
 MENU = "Menu:\nd) drive\nr) refuel\nq) quit"
+
+
 def main():
     print("Let's drive!")
     name = input("Enter your car name: ")
@@ -9,7 +11,6 @@ def main():
 
     print(MENU)
     menu_choice = input(">>>").lower()
-
 
     while menu_choice != "q":
         if menu_choice == "d":
