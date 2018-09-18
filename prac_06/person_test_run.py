@@ -12,8 +12,8 @@ def main():
         people.append(individual)
         first_name = input("Enter first name: ")
 
-    for person in people:
-        print(person)
+    for i in people:
+        print(i)
 
 
 main()
