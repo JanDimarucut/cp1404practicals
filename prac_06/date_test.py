@@ -1,5 +1,4 @@
 from prac_06.date import Date
-import datetime
 
 
 def main():
@@ -9,5 +8,6 @@ def main():
 
     date = Date(day, month, year)
     print(date)
+
 
 main()
