@@ -1,0 +1,18 @@
+BoxLayout:
+    orientation: 'vertical'
+    Button:
+        id: name1
+        text: 'Bob Smith'
+        on_press: app.handle_press(self)
+
+    Button:
+        text: 'John Doe'
+        on_press: app.handle_press(self)
+
+    Button:
+        text: 'Mikey Brown'
+        on_press: app.handle_press(self)
+
+    Label:
+        id: output_label
+        text: 'Click on the names'
