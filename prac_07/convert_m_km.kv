@@ -1,3 +1,23 @@
+<Widget>
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 1 #the background colour
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    color: 0, 0, 0, 1 #button text colour
+
+<Button>
+    font_size: 48
+    background_normal: ''
+    background_down: 'atlas://data/images/defaulttheme/button'
+    canvas.after:
+        Color:
+            rgba: 0, 0, 0, 1 #button outline colour
+        Line:
+            rectangle: self.x + 2, self.y + 1, self.width - 1, self.height - 1
+
+
 BoxLayout:
     orientation: 'vertical'
     # This is the input box line
@@ -8,6 +28,8 @@ BoxLayout:
             text: '34'
             font_size: 48
             on_text: app.handle_calculate()
+            color: (0, 0, 0, 1)
+
         BoxLayout:
             orientation: 'vertical'
             size_hint_x: 0.25
@@ -28,4 +50,4 @@ BoxLayout:
             id: output_label
             font_size: 48
             text: '54.717'
-            color: (1, 1, 0, 1)
+            color: (0, 0, 0, 1)
