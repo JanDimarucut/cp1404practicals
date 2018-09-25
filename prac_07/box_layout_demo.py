@@ -15,6 +15,7 @@ class BoxLayoutDemo(App):
     def handle_clear(self):
         self.root.ids.output_label.text = ''
         self.root.ids.input_name.text = ''
+        # self.root.ids.output_label.clear_widgets()
 
 
 BoxLayoutDemo().run()
